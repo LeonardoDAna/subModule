@@ -1,4 +1,0 @@
-[submodule "publicComponents"]
-	path = publicComponents
-	url = https://github.com/LeonardoDAna/publicComponents.git
-	branch = main

@@ -3,7 +3,7 @@
 </template>
 
 <script>
-import {  } from "";
+import { multiply3 } from "../publicComponents/utils/index";
 export default {
   name: "HelloWorld",
   props: {
@@ -14,10 +14,12 @@ export default {
       number: 10,
     };
   },
-  mounted() {},
+  mounted() {
+    this.number = this.compute(this.number);
+  },
   methods: {
     compute(value) {
-      return value
+      return multiply3(value);
     },
   },
 };
